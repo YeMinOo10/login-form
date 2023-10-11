@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// font-family: 'IBM Plex Serif', serif;
+// font-family: 'Montserrat', sans-serif;
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$primary: rgb(172, 249, 172);
+
+$border-radius: 20px;
+
+$input-border-radius: 0;
+$input-color: white;
+$input-placeholder-color: white;
+$focus-ring-color: transparent;
+
+$btn-border-radius-sm: 0.1rem;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.bg-img {
+    background-image: url(https://images.unsplash.com/photo-1546914857-f9712ac61f4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    color: white;
+}
+
+.place-holder-fs {
+    font-size: 14px;
+}
+
+input:focus::placeholder {
+    color: rgba(220, 220, 220, 0.751);
+    font-size: 11px;
+    transition: 0.4s;
+}
+
+.form-bg-blur {
+    backdrop-filter:blur(15px);
+}
